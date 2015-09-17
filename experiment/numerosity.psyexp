@@ -1,0 +1,90 @@
+<PsychoPy2experiment version="1.82.01" encoding="utf-8">
+  <Settings>
+    <Param name="Show mouse" val="False" valType="bool" updates="None"/>
+    <Param name="Data filename" val="'data/%s_%s_%s' %(expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None"/>
+    <Param name="Monitor" val="testMonitor" valType="str" updates="None"/>
+    <Param name="Enable Escape" val="True" valType="bool" updates="None"/>
+    <Param name="color" val="$[0,0,0]" valType="str" updates="None"/>
+    <Param name="Window size (pixels)" val="[1024, 768]" valType="code" updates="None"/>
+    <Param name="Full-screen window" val="True" valType="bool" updates="None"/>
+    <Param name="colorSpace" val="rgb" valType="str" updates="None"/>
+    <Param name="Experiment info" val="{'participant':'', 'session':'001'}" valType="code" updates="None"/>
+    <Param name="Save csv file" val="False" valType="bool" updates="None"/>
+    <Param name="Show info dlg" val="True" valType="bool" updates="None"/>
+    <Param name="Save wide csv file" val="True" valType="bool" updates="None"/>
+    <Param name="Save psydat file" val="True" valType="bool" updates="None"/>
+    <Param name="expName" val="numerosity" valType="str" updates="None"/>
+    <Param name="logging level" val="exp" valType="code" updates="None"/>
+    <Param name="blendMode" val="avg" valType="str" updates="None"/>
+    <Param name="Save excel file" val="False" valType="bool" updates="None"/>
+    <Param name="Units" val="use prefs" valType="str" updates="None"/>
+    <Param name="Save log file" val="True" valType="bool" updates="None"/>
+    <Param name="Screen" val="1" valType="num" updates="None"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <StaticComponent name="Start">
+        <Param name="code" val="" valType="code" updates="None"/>
+        <Param name="name" val="Start" valType="code" updates="None"/>
+        <Param name="stopVal" val="0.5" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+      </StaticComponent>
+      <ImageComponent name="Stimulus">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="flipVert" val="False" valType="bool" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="Stimulus" valType="code" updates="None"/>
+        <Param name="color" val="$[1,1,1]" valType="str" updates="constant"/>
+        <Param name="stopVal" val="15" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="mask" val="None" valType="str" updates="constant"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="interpolate" val="linear" valType="str" updates="constant"/>
+        <Param name="startEstim" val="0.5" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="texture resolution" val="128" valType="code" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.5" valType="code" updates="None"/>
+        <Param name="flipHoriz" val="False" valType="bool" updates="constant"/>
+        <Param name="image" val="$file" valType="str" updates="set every repeat"/>
+        <Param name="size" val="[1.7, 1.7]" valType="code" updates="constant"/>
+      </ImageComponent>
+      <KeyboardComponent name="Response">
+        <Param name="correctAns" val="$correct" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="True" valType="bool" updates="constant"/>
+        <Param name="name" val="Response" valType="code" updates="None"/>
+        <Param name="stopVal" val="15" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="0.5" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'left','right','down'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.5" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <LoopInitiator loopType="TrialHandler" name="Trials">
+      <Param name="conditionsFile" val="../../../final/conditions.csv" valType="str" updates="None"/>
+      <Param name="name" val="Trials" valType="code" updates="None"/>
+      <Param name="isTrials" val="True" valType="bool" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="sequential" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'n1': 32, 'n2': 38, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im17.png'}, {'n1': 116, 'n2': 112, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im63.png'}, {'n1': 142, 'n2': 134, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im67.png'}, {'n1': 133, 'n2': 119, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im58.png'}, {'n1': 46, 'n2': 43, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im22.png'}, {'n1': 20, 'n2': 24, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im9.png'}, {'n1': 151, 'n2': 162, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im70.png'}, {'n1': 92, 'n2': 99, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im51.png'}, {'n1': 151, 'n2': 142, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im68.png'}, {'n1': 127, 'n2': 121, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im65.png'}, {'n1': 66, 'n2': 61, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im34.png'}, {'n1': 25, 'n2': 27, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im13.png'}, {'n1': 58, 'n2': 56, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im31.png'}, {'n1': 92, 'n2': 87, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im49.png'}, {'n1': 112, 'n2': 114, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im61.png'}, {'n1': 87, 'n2': 79, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im37.png'}, {'n1': 50, 'n2': 55, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im24.png'}, {'n1': 118, 'n2': 106, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im41.png'}, {'n1': 14, 'n2': 11, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im4.png'}, {'n1': 16, 'n2': 16, 'correct': 'down', 'file': '/Users/dhruv13/Desktop/final/im5.png'}, {'n1': 151, 'n2': 161, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im69.png'}, {'n1': 106, 'n2': 117, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im40.png'}, {'n1': 194, 'n2': 211, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im76.png'}, {'n1': 61, 'n2': 58, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im32.png'}, {'n1': 17, 'n2': 16, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im6.png'}, {'n1': 24, 'n2': 24, 'correct': 'down', 'file': '/Users/dhruv13/Desktop/final/im11.png'}, {'n1': 9, 'n2': 8, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im2.png'}, {'n1': 56, 'n2': 56, 'correct': 'down', 'file': '/Users/dhruv13/Desktop/final/im29.png'}, {'n1': 11, 'n2': 9, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im3.png'}, {'n1': 112, 'n2': 113, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im60.png'}, {'n1': 50, 'n2': 58, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im27.png'}, {'n1': 32, 'n2': 28, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im15.png'}, {'n1': 50, 'n2': 46, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im23.png'}, {'n1': 83, 'n2': 80, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im47.png'}, {'n1': 80, 'n2': 81, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im45.png'}, {'n1': 119, 'n2': 130, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im55.png'}, {'n1': 80, 'n2': 82, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im46.png'}, {'n1': 20, 'n2': 17, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im8.png'}, {'n1': 164, 'n2': 151, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im72.png'}, {'n1': 134, 'n2': 127, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im66.png'}, {'n1': 178, 'n2': 193, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im74.png'}, {'n1': 92, 'n2': 98, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im50.png'}, {'n1': 80, 'n2': 80, 'correct': 'down', 'file': '/Users/dhruv13/Desktop/final/im44.png'}, {'n1': 43, 'n2': 41, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im21.png'}, {'n1': 112, 'n2': 112, 'correct': 'down', 'file': '/Users/dhruv13/Desktop/final/im59.png'}, {'n1': 119, 'n2': 132, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im57.png'}, {'n1': 28, 'n2': 25, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im14.png'}, {'n1': 50, 'n2': 56, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im25.png'}, {'n1': 96, 'n2': 87, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im38.png'}, {'n1': 194, 'n2': 178, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im75.png'}, {'n1': 106, 'n2': 96, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im39.png'}, {'n1': 178, 'n2': 164, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im73.png'}, {'n1': 72, 'n2': 66, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im35.png'}, {'n1': 151, 'n2': 163, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im71.png'}, {'n1': 119, 'n2': 131, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im56.png'}, {'n1': 25, 'n2': 24, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im12.png'}, {'n1': 87, 'n2': 83, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im48.png'}, {'n1': 79, 'n2': 72, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im36.png'}, {'n1': 121, 'n2': 116, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im64.png'}, {'n1': 145, 'n2': 131, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im43.png'}, {'n1': 56, 'n2': 57, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im30.png'}, {'n1': 119, 'n2': 109, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im54.png'}, {'n1': 112, 'n2': 115, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im62.png'}, {'n1': 17, 'n2': 19, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im7.png'}, {'n1': 20, 'n2': 25, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im10.png'}, {'n1': 39, 'n2': 32, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im18.png'}, {'n1': 100, 'n2': 92, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im52.png'}, {'n1': 32, 'n2': 37, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im16.png'}, {'n1': 50, 'n2': 57, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im26.png'}, {'n1': 61, 'n2': 65, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im33.png'}, {'n1': 40, 'n2': 40, 'correct': 'down', 'file': '/Users/dhruv13/Desktop/final/im19.png'}, {'n1': 212, 'n2': 231, 'correct': 'right', 'file': '/Users/dhruv13/Desktop/final/im78.png'}, {'n1': 41, 'n2': 40, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im20.png'}, {'n1': 109, 'n2': 100, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im53.png'}, {'n1': 212, 'n2': 194, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im77.png'}, {'n1': 59, 'n2': 50, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im28.png'}, {'n1': 131, 'n2': 118, 'correct': 'left', 'file': '/Users/dhruv13/Desktop/final/im42.png'}, {'n1': 8, 'n2': 8, 'correct': 'down', 'file': '/Users/dhruv13/Desktop/final/im1.png'}]" valType="str" updates="None"/>
+      <Param name="Selected rows" val="" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="Trials"/>
+  </Flow>
+</PsychoPy2experiment>
