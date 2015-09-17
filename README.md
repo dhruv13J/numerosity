@@ -41,6 +41,4 @@
 
 3) Number of subjects: Variable. More the better!
 
-#### Code:
-	Everything used to generate the images is in the ipython notebook. The conditions file for Psychopy will also be generated automatically.
-	Please change the base_path global variable according to your needs.
+#### Code: Everything used to generate the images is in the ipython notebook. The conditions file for Psychopy will also be generated automatically. Please change the base_path global variable according to your needs.
