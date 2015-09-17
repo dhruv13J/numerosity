@@ -32,10 +32,15 @@ Parameters for the experiment.
 Issues:
 
 1) Order of presentation: 'Random' or 'Not Random'? 
-	- Random presentation can counter the counting issue. Sequential presentation will let the subject count both sides and make a more informed guess. Thus, a random sequence 
+	- Random presentation can counter the counting issue. Sequential presentation will let the subject count both sides and make a more informed guess. 
+	  Thus, a random sequence is preferable.
 	- The sequence should be preserved across subjects, which prevents the noise introduced by the adaptation to the task.
 
 2) Control for spread and counting: How does spread of the dots affect the estimate?
 	- Introduce a small set of same number of images to the set with different spread. Could be done towards the end of the experiment.
 
-3) Number of subjects: Can't help this, has to be ~6.
+3) Number of subjects: Variable. More the better!
+
+Code:
+	Everything used to generate the images is in the ipython notebook. The conditions file for Psychopy will also be generated automatically.
+	Please change the base_path global variable according to your needs.
