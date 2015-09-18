@@ -37,7 +37,7 @@
 	- The sequence should be preserved across subjects, which prevents the noise introduced by the adaptation to the task.
 
 2) Control for spread and counting: How does spread of the dots affect the estimate?
-	- Introduce a small set of same number of images to the set with different spread. Could be done towards the end of the experiment.
+	- Introduce a small set of same number of points to the set with different spread. Could be done towards the end of the experiment.
 
 3) Number of subjects: Variable. More the better!
 
